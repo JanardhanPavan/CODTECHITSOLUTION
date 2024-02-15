@@ -1,5 +1,10 @@
 # Calculator using Python
 
+# ADDITION 
+# SUBTRATION
+# MULTIPLICATION
+# DIVISION
+
 operation = {}
 
 
@@ -9,25 +14,29 @@ print("2. SUBTRACT")
 print("3. MULTIPLY")
 print("4. DIVIDE")
 
-choice = input("Enter the number: ")
 
-if choice == "1":
+while True:
+    
+  choice = input("Enter the number: ")
+
+
+  if choice == "1":
    num1 = input("Enter the first number: ")
    num2 = input("Enter the second number: ")
    print("the addition is: " + str(int(num1) + int(num2)))
    
-elif choice == "2":
-  num1 = input("Enter the first number: ")
-  num2 = input("Enter the second number: ")
-  print("the subtraction is: " + str(int(num1) - int(num2)))
-elif choice == "3":
+  elif choice == "2":
+    num1 = input("Enter the first number: ")
+    num2 = input("Enter the second number: ")
+    print("the subtraction is: " + str(int(num1) - int(num2)))
+  elif choice == "3":
    num1 = input("Enter the first number: ")
    num2 = input("Enter the second number: ")
    print("the multiplication is: " + str(int(num1) * int(num2)))
-elif choice == "4":
+  elif choice == "4":
    num1 = input("Enter the first number: ")
    num2 = input("Enter the second number: ")
    print("the division is: " + str(int(num1) / int(num2)))
-else:
+  else:
     print("Invalid entry")
-    
+    print("Thank you!!!!")
